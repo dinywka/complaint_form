@@ -1,0 +1,21 @@
+<!-- complaint.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Form</title>
+</head>
+<body>
+    <h1>Complaint Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="user_complaint">Complaint:</label>
+        <textarea id="user_complaint" name="user_complaint" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
