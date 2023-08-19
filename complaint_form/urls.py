@@ -4,5 +4,7 @@ from complaint_form import views
 
 urlpatterns = [
     path('', views.home),
-    path('complaint/', views.complaint)
+    path('complaint/', views.complaint),
+    path('list/', views.list)
+
 ]
